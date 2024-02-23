@@ -1,5 +1,4 @@
 {
-  
   "version": 2,
   "builds": [
     {
@@ -24,5 +23,9 @@
       "src": "/(.*)",
       "dest": "Portfolio_Website/wsgi.py"
     }
-  ]
+  ],
+  "build": {
+    "functions": "api/",
+    "output": "static/"
+  }
 }
