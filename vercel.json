@@ -24,6 +24,5 @@
       "src": "/(.*)",
       "dest": "Portfolio_Website/wsgi.py"
     }
-  ],
-  "outputDirectory": "staticfiles_build"
+  ]
 }
