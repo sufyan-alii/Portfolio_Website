@@ -1,12 +1,11 @@
 {% load static%}
+<html>
 
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width , initial-scale =1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" disabled>
-    <link rel="stylesheet" href="{% static 'css/skins/color-1.css' %}" disabled>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/skins/color-1.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- In the head section of your HTML file -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap">
@@ -16,7 +15,7 @@
     <link rel="stylesheet" href="{% static 'css/skins/color-3.css' %}" class="alternate-style" title="color-3" disabled>
     <link rel="stylesheet" href="{% static 'css/skins/color-4.css' %}" class="alternate-style" title="color-4" disabled>
     <link rel="stylesheet" href="{% static 'css/skins/color-5.css' %}" class="alternate-style" title="color-5" disabled>
-    <link rel="stylesheet" href="{% static 'css/style-switcher.css' %}" disabled>
+    <link rel="stylesheet" href="{% static 'css/style-switcher.css' %}">
 </head>
 
 <body>
@@ -590,7 +589,7 @@
                         <div class="row">
                             <div class="form-item col-6 padd-15">
                                 <div class="form-group">
-                                    <input name="name" type="text" class="form-control" placeholder="Enter Your Name" autocomplete="name">
+                                    <input name="name" type="text" class="form-control" placeholder="Enter Your Name">
                                 </div>
                             </div>
                             <div class="form-item col-6 padd-15">
@@ -741,7 +740,7 @@
 
     <!---------------------------- Function to Download Cv by button Start ---------------------------->
 
-    <!-- <script>
+    <script>
        document.getElementById('downloadButton').addEventListener('click', function() {
     // Replace 'your-pdf-file-url.pdf' with the URL of your PDF file
     const pdfUrl = "{% static 'CV.pdf' %}";
@@ -762,7 +761,7 @@
     // Remove the link from the document body
     document.body.removeChild(link);
 });
-    </script> -->
+    </script>
     <!---------------------------- Function to Download Cv by button End ---------------------------->
 </body>
 
