@@ -1,4 +1,4 @@
-#!d:\personal projects\django_portfolio_website\portfolio_website\myenv\scripts\python.exe
+#!d:\personal projects\portfolio_website\portfolio_website\myenv\scripts\python.exe
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

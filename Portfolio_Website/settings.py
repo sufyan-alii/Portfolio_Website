@@ -134,7 +134,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 import os
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'dist')
+STATIC_ROOT = "D:/Personal Projects/Portfolio_website/Portfolio_Website/dist"
 
 
 
