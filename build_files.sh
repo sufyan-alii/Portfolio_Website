@@ -7,7 +7,7 @@ pip install -r requirements.txt
 mkdir -p dist
 
 # Collect static files into the dist directory
-python3.9 manage.py collectstatic --no-input
+python3.7 manage.py collectstatic --no-input
 
 # Exit with success status
 exit 0
