@@ -4,7 +4,7 @@
 pip install -r requirements.txt
 
 # Create the dist directory if it doesn't exist
-mkdir -p dist
+mkdir -p $BASE_DIR/dist
 
 # Collect static files into the dist directory
 python3.9 manage.py collectstatic --no-input
