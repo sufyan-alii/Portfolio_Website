@@ -88,7 +88,3 @@ const nav = document.querySelector(".nav"),
         }
 /*------------------- Aside nav End --------------------- */
         
-
-
-
-        
