@@ -371,7 +371,7 @@ h3.my-profession {
 
 
 .home-info p {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
     font-size: 20px;
     color: var(--text-black- 700);
     animation: slideInTop 1.3s ease-out;
@@ -753,7 +753,7 @@ h3.my-profession {
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
-    text-align: justify;
+    text-align: center;
 }
 
 /* Portfolio */
