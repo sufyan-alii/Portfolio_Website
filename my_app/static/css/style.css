@@ -239,8 +239,8 @@ ul {
     border: 1px solid var(--bg-black-50);
     cursor: pointer;
     position: fixed;
-    top: 20px;
-    margin-left: -10px;
+    top: 25px;
+    margin-right: -10px;
     border-radius: 5px;
     background: var(--bg-black-100);
     display: none;
@@ -1066,14 +1066,14 @@ h3.my-profession {
 
     .aside .nav-toggler {
         display: flex;
-        left: 30px;
+        right: 30px;
     }
 
     .aside .nav-toggler.open {
-        left: 393px;
+        /* left: 393px; */
         /* top: 27px; */
-        height: 35px;
-        width: 35px;
+        height: 37px;
+        width: 47px;
     }
 
     .section {
@@ -1095,7 +1095,6 @@ h3.my-profession {
         width: 100%;
     }
     
-
     .home .home-info {
         flex: 0 0 530px;
         max-width: 100%;
