@@ -1124,11 +1124,11 @@ h3.my-profession {
     }
 
     .home .home-img img {
-        width: 60%;
+        width: 55%;
         height: 50%;
         border-radius: 300px;
         margin-top: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         /* animation: none; */
     }
 
@@ -1140,31 +1140,25 @@ h3.my-profession {
         display: none;
     }
     h3.hello {
-        font-size: 24px;
+        font-size: 22px;
         margin: 15px 0;
     }
     
     h3.hello span {
         font-family: 'Clicker Script', cursive;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 700;
         color: var(--skin-color);
     }
     
     h3.my-profession {
-        font-size: 26px;
-        margin: 15px 0;
-    }
-    
-    .typing {
-        color: var(--skin-color);
-    }
-    
+        font-size: 24px;
+    } 
+    .typing{
+        font-size: 24px;
+    } 
     .home-info p {
-        margin-bottom: 70px;
-        font-size: 16px;
-        color: var(--text-black- 700);
-        
+        font-size: 14px;    
     }
 
     .section {
