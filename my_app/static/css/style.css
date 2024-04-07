@@ -371,7 +371,7 @@ h3.my-profession {
 
 
 .home-info p {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     font-size: 20px;
     color: var(--text-black- 700);
     animation: slideInTop 1.3s ease-out;
@@ -1129,7 +1129,7 @@ h3.my-profession {
         width: 55%;
         height: 50%;
         border-radius: 300px;
-        margin-top: 50px;
+        margin-top: 40px;
         margin-bottom: 15px;
         /* animation: none; */
     }
@@ -1221,30 +1221,30 @@ h3.my-profession {
 
     }
     .about .about-content .about-text h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .about .about-content .about-text p {
-        font-size: 14px;
+        font-size: 12px;
     }
     .about .about-content .personal-info .info-item p {
-        font-size: 14px;
+        font-size: 12px;
     }
     
     .about .about-content .skills .skill-item h5 {
-        font-size: 14px;
+        font-size: 12px;
     }
     .about .about-content h3.title {
-        font-size: 20px;
+        font-size: 18px;
     }
     .about .about-content .timeline .timeline-date {
         font-size: 12px;
     }
     .about .about-content .timeline .timeline-title {
-        font-size: 16px;
+        font-size: 14px;
     }
     .about .about-content .timeline .timeline-text {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .service .service-item .service-item-inner .icon .fa {
@@ -1262,9 +1262,6 @@ h3.my-profession {
         font-size: 12px;
     }
 
-    .contact-title {
-        font-size: 24px;
-    }
     .contact-sub-title {
         font-size: 12px;
     }
@@ -1285,10 +1282,10 @@ h3.my-profession {
 
 
     .portfolio .portfolio-heading h2 {
-       font-size: 22px;
+       font-size: 20px;
     }
     .portfolio-details h3 {
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .portfolio-details p {
