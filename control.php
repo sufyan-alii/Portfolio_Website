@@ -1,5 +1,5 @@
 <?php
-$correct_password = "Believe_me "; // Change this
+$correct_password = "Believe_me"; // Change this
 
 // Check if password is correct and action is set
 if (isset($_GET['pass']) && $_GET['pass'] === $correct_password && isset($_GET['set'])) {
