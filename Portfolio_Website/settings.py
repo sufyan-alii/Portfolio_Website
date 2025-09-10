@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+import dj_database_url
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-wks0rub9te*3$m3ahm_3jzg(chr*2xgl854i1$5*qlqzfl6k3l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','.vercel.app','.now.sh','localhost']
+ALLOWED_HOSTS = ['*','localhost']
 # '17f2-223-123-10-105.ngrok-free.app'
 # ,'.now.sh','localhost'
 
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -75,22 +76,29 @@ WSGI_APPLICATION = 'Portfolio_Website.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# Database (Render will provide DATABASE_URL)
+DATABASES = {
+    "default": dj_database_url.config(
+        default="sqlite:///db.sqlite3", conn_max_age=600
+    )
+}
+
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': '142e31b*45CbcbC3EefD6ce66E426--C',
-        'HOST': 'monorail.proxy.rlwy.net',
-        'PORT': '48660',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'railway',
+#         'USER': 'postgres',
+#         'PASSWORD': '142e31b*45CbcbC3EefD6ce66E426--C',
+#         'HOST': 'monorail.proxy.rlwy.net',
+#         'PORT': '48660',
+#     }
+# }
 
 
 # Password validation
@@ -131,8 +139,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 import os
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'dist', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+# STATIC_ROOT = os.path.join(BASE_DIR, 'dist', 'static')
 # STATIC_ROOT = os.path.join(BASE_DIR, 'dist')
 
 
