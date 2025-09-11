@@ -3,25 +3,18 @@
   "builds": [
     {
       "src": "Portfolio_Website/wsgi.py",
-      "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
-    },
-    {
-      "src": "build_files.sh",
-      "use": "@vercel/static-build",
-      "config":{
-        "outputDirectory": "dist" 
-      }
+      "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "/dist/static/$1"
+      "dest": "/staticfiles/$1"
     },
     {
       "src": "/(.*)",
       "dest": "Portfolio_Website/wsgi.py"
     }
-  ]
+  ],
+  "buildCommand": "python manage.py collectstatic --noinput"
 }
