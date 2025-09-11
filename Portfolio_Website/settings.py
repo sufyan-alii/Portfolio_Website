@@ -76,22 +76,22 @@ WSGI_APPLICATION = 'Portfolio_Website.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'railway',
-#         'USER': 'postgres',
-#         'PASSWORD': '142e31b*45CbcbC3EefD6ce66E426--C',
-#         'HOST': 'monorail.proxy.rlwy.net',
-#         'PORT': '48660',
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '142e31b*45CbcbC3EefD6ce66E426--C',
+        'HOST': 'monorail.proxy.rlwy.net',
+        'PORT': '48660',
+    }
+}
 
 
 # Password validation
