@@ -1,15 +1,7 @@
 #!/bin/bash
+# Install requirements
+pip install -r requirements.txt
 
-# Install Python dependencies
-pip3 install -r requirements.txt
+# Collect static files
+python3 manage.py collectstatic --noinput
 
-# Create the dist directory if it doesn't exist
-mkdir -p dist
-mkdir -p static
-
-
-# Collect static files into the dist directory
-python3.9 manage.py collectstatic --no-input
-
-# Exit with success status
-exit 0
